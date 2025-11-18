@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "LPU Auto-Login +",
+  "version": "1.0",
+  "description": "Automatically logs you into **LPU 24Online Internet Portal** every time you connect to Wi-Fi. No more typing ID, password, or ticking Terms & Conditions!",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://internet.lpu.in/24online/webpages/*"],
+      "js": ["autologin.js"]
+    }
+  ]
+}
